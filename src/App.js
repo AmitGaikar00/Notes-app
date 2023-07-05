@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
-import Home from "./components/Home";
+import Banner from "./components/Banner";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
   const handletheme = () => {
     setDarkMode(!darkMode);
     console.log("clicked");
@@ -11,8 +11,10 @@ function App() {
 
   return (
     <main className={`${darkMode ? "dark" : ""} `}>
+
       <Header handleChange={handletheme} />
-      <Home />
+      <Banner />
+
     </main>
   );
 }
