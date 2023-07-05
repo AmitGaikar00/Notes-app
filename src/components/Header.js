@@ -3,7 +3,7 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 
 function Header({ handleChange }) {
   return (
-    <header className="bg-white dark:bg-dark dark:text-white">
+    <header className="bg-white dark:bg-dark dark:text-white sticky z-50 top-0 left-0 right-0">
       <nav className="container  mx-auto w-full px-5 py-4 flex justify-between items-center">
         <h1 className="font-bold  md:text-2xl  text-xl">
           <span className="text-blue-500">Notes</span>
